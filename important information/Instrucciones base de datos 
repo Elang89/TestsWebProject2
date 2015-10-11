@@ -1,0 +1,5 @@
+Pasos para crear usuario en base de datos 
+
+	1. Abra mysql y cree el siguiente usuario: "CREATE USER 'tecFormsUser'@'lochalhost' IDENTIFIED BY 'tec';"
+	2. Dar todos los permisos al usuario con: "GRANT ALL PRIVILEGES ON * . * TO 'tecFormsUser'@'localhost';"
+	3. Recuerde hacer rake db:create y cambiar su database.yml
