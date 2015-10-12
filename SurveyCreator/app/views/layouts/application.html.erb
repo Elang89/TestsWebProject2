@@ -1,36 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>SurveyCreator</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Survey Creator!">
+    <meta name="authors" content="Emmanuel, Miuyin y Ernesto">
+    <title>Survey Creator</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
 </head>
-	<body>
-		<header>
-				<nav>
-					<ul class="no-list row center-xs middle-xs">
-						<li class="col-md"><h1 id="logo" class="no-margin">TecShop!</h1></li>
-						<li class="col-md"><%= link_to "Home", root_path%></li>
-						<li class="col-md"><%= link_to "Surveys", surveys_path%></li> 
-					<% if user_signed_in? %>
-						<li class="col-md"><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
-						<li class="col-md"><%= link_to "Create Survey", surveys_new_path%></li>
-					<%else%>
-						<li class="col-md"><%= link_to "Log in", new_user_session_path%></li>
-						<li class="col-md"><%= link_to "Create Account", new_user_registration_path%></li>
-					<%end%>
-					</ul>
-				</nav> 
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#">Survey Creator!</a></li>
+                <li><%= link_to "Home", root_path%></li>
+                <li><%= link_to "Surveys", surveys_path%></li>
+                <% if user_signed_in? %>
+                    <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>                
+                    <li><%= link_to "Create Survey", surveys_new_path%></li>
+                <%else%>
+                    <li><%= link_to "Log in", new_user_session_path%></li>
+                    <li><%= link_to "Create Account", new_user_registration_path%></li>
+                <%end%>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
 
-		</header>
-		<%= yield %>
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Simple Sidebar</h1>
+                        <%= yield %>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
 
-	</body>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
 </html>
