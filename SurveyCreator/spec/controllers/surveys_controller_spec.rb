@@ -5,12 +5,12 @@ describe SurveysController, type: :controller do
 
   	let(:valid_attributes){
 		@user = User.create!(:email => "email@gmail.com", :password => 'password')
-	  		{:name => "name", :user_id => @user.id}
+	  		{:name => "name",:status => false, :user_id => @user.id}
   	} 
 
   	let(:invalid_attributes){
   		@user = User.create!(:email => "email@gmail.com", :password => 'password')
-	  		{:name => "", :user_id => @user.id}	
+	  		{:name => "", :status => false, :user_id => @user.id}	
   	}
 
 	describe "GET #index" do

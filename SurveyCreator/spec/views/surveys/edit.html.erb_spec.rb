@@ -1,17 +1,16 @@
 require 'rails_helper'
 
-RSpec.describe "surveys/edit.html.erb", type: :view do
+describe "surveys/edit.html.erb", type: :view do
   
   before(:each) do
-  	@survey = assign(:survey, Survey.create!(
-  		name: "SurveyTest"))
-  end
+    @user = User.create!(email: "email@gmail.com", password: "password")
+    sign_in @user
+    @survey = Survey.create!(name: "Name", status: false, user_id: @user.id)
+  end 
+    
 
-  it "renders the edit survey form" do
+  it "renders the options to edit an unpublished survey" do
   	render
-  	assert_select "form[action=?][method=?]",survey_path(@survey), "post" do
-  		assert_select "input#survey_name[name=?]","survey[name]"
-  	end
+    expect(rendered).to have_selector('form')
   end
-
 end
