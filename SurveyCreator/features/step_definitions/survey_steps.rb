@@ -19,7 +19,7 @@ When(/^I press "Create Survey"$/) do
 end
 
 Then(/^I should see "(.*?)"$/) do |arg1| 
-	page.should have_content(arg1) 
+	expect(have_content(arg1)) 
 end
 
 Then(/^I should have ([0-9]) Survey$/) do |count| 
