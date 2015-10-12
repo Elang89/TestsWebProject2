@@ -1063,14 +1063,39 @@
       ],
       "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/surveys/index.html.erb_spec.rb": [
         1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        2,
+        null,
         null,
         1,
         1,
         1,
         null,
+        null,
         1,
         1,
-        0,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null,
         null,
         null
@@ -1109,6 +1134,6 @@
         null
       ]
     },
-    "timestamp": 1444683815
+    "timestamp": 1444685647
   }
 }
