@@ -1,18 +1,16 @@
 require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe "surveys/new.html.erb", type: :view do
+describe "surveys/new.html.erb", type: :view do
   before(:each) do
     assign(:survey, Survey.new(
       :name => "MyString"
     ))
   end
 
-  it "renders new movie form" do
+  it "renders new survey form" do
     render
-
-    assert_select "form[action=?][method=?]", surveys_path, "post" do
-
-      assert_select "input#survey_name[name=?]", "survey[name]"
-    end
+    expect(rendered).to have_selector('form')
+    expect(rendered).to have_link('Back', href: surveys_path)
   end
 end

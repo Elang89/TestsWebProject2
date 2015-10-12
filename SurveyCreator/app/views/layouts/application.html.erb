@@ -17,17 +17,16 @@
     <div id="wrapper">
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#">Survey Creator!</a></li>
-                <li><%= link_to "Home", root_path%></li>
-                <li><%= link_to "Surveys", surveys_path%></li>
-                <% if user_signed_in? %>
-                    <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>                
-                    <li><%= link_to "Create Survey", surveys_new_path%></li>
-                <%else%>
-                    <li><%= link_to "Log in", new_user_session_path%></li>
-                    <li><%= link_to "Create Account", new_user_registration_path%></li>
-                <%end%>
-                <li><a href="#">Contact</a></li>
+				<li class="col-md"><%= link_to "Home", root_path%></li>
+				<li class="col-md"><%= link_to "Surveys", "#"%></li> 
+			<% if user_signed_in? %>
+				<li class="col-md"><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+				<li class="col-md"><%= link_to "Create Survey", surveys_new_path%></li>
+				<li class="col-md"><%=  link_to "Edit your unpublished surveys", surveys_path%></li>
+			<%else%>
+				<li class="col-md"><%= link_to "Log in", new_user_session_path%></li>
+				<li class="col-md"><%= link_to "Create Account", new_user_registration_path%></li>
+			<%end%>
             </ul>
         </div>
         <div id="page-content-wrapper">

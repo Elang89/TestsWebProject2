@@ -69,15 +69,19 @@ describe SurveysController, type: :controller do
 	end
 
 	describe "POST #create" do 
+		before(:each) do 
+			@user = User.create!(email: "email@gmail.com", password: "password")
+			sign_in @user
+		end 
 		context "with valid attributes" do 	
 			it "describes a survey created with valid attributes" do
 				expect{
-					post :create, survey: valid_attributes
+					post :create, survey: {name: "Name", user_id: @user.id}
 				}.to change(Survey, :count).by(1)
 			end
 
 			it "redirects the user to the survey's detail page" do
-				post :create, {survey: valid_attributes}
+				post :create, survey: {name: "Name", user_id: @user.id}
 				expect(response).to redirect_to(Survey.last)
 			end 
 		end
@@ -85,17 +89,16 @@ describe SurveysController, type: :controller do
 		context "with invalid attributes" do 
 			it "describes a survey created with invalid attributes" do 
 				expect{
-					post :create, survey: invalid_attributes
+					post :create, survey: {name: "", user_id: @user.id}
 				}.not_to change(Survey,:count)
 			end
 
 			it "re-renders the new template" do 
-				post :create, {survey: invalid_attributes}
+				post :create, survey: {name: "", user_id: @user.id}
 				expect(response).to render_template('new')
 			end 
 		end 
 	end 
-
 	describe "PUT #update" do
 
 		let (:new_attributes){

@@ -1,10 +1,13 @@
 require 'rails_helper'
+require 'spec_helper'
 
-RSpec.describe "surveys/show.html.erb", type: :view do
-	it 'displays product details correctly' do
+describe "surveys/show.html.erb", type: :view do
+	
+	it 'displays a survey with a list of questions' do
     	assign(:survey, Survey.create(name: 'Shirt'))
     	render
     	expect(rendered).to match /Shirt/
+    	expect(rendered).to have_selector('ol')
   	end
 end
 

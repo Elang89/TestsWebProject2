@@ -7,6 +7,14 @@
 
 <p>
 
-
-<%= link_to 'Edit', edit_survey_path(@survey) %> |
+<ol>
+	<% for question in @survey.questions %>
+		<li><%= question.question_content %></li>
+	<% end %>
+</ol>
+<% if current_user.id == @survey.user_id && @survey.status == 1 %>
+	<%= link_to 'Edit', edit_survey_path(@survey) %> 
+	<%= link_to 'Destroy', @survey, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
 <%= link_to 'Back', surveys_path %>
+

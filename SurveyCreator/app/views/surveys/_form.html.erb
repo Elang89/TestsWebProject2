@@ -15,12 +15,14 @@
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
-  <% f.fields_for :questions do |builder| %>
-    <div class="field">
-      <%= builder.label :question_content, "Question" %>
-      <%= builder.text_area :question_content, :rows => 3 %>
-    </div>
+  <%= f.fields_for :questions do |builder| %>
+    <%= render 'question_fields', f: builder %>
   <% end %>
+  <div class="field">
+    <%= f.check_box :status, value: 0, checked: false %>
+    <%= f.label :status, "Publish(only check this if you are sure 
+    this is your final version of the survey)"%>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
