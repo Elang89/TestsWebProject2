@@ -12,7 +12,6 @@
 					<ul class="no-list row center-xs middle-xs">
 						<li class="col-md"><h1 id="logo" class="no-margin">TecShop!</h1></li>
 						<li class="col-md"><%= link_to "Home", root_path%></li>
-						<li class="col-md"><%= link_to "Contact us!", root_path%></li>
 						<li class="col-md"><%= link_to "Surveys", surveys_path%></li> 
 					<% if user_signed_in? %>
 						<li class="col-md"><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
@@ -24,7 +23,7 @@
 					</ul>
 				</nav>
 
-		</header>>
+		</header>
 		<%= yield %>
 
 	</body>

@@ -5,6 +5,7 @@ class SurveysController < ApplicationController
 
 	def new
 		@survey = Survey.new
+		5.times{@survey.questions.build}
 	end
 
 	def show
