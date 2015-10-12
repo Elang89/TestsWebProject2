@@ -13,10 +13,11 @@
   <tbody>
     <% @surveys.each do |survey| %>
       <tr>
-        <td><%= survey.name %></td>
-        <td><%= link_to 'Show', survey %></td>
-        <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
-        <td><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% if current_user.id == User.find_by_id(survey.user_id).id && survey.status == 1%>
+          <td><%= survey.name %></td>
+          <td><%= link_to 'Show', survey %></td>
+          <td><%= link_to 'Destroy', survey, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
       </tr>
     <% end %>
   </tbody>
