@@ -23,8 +23,8 @@ Then(/^I should be redirected to Survey$/) do
   request.headers['HTTP_REFERER'].should_not == request.request_uri
 end 
 
-Then(/^I should see "(.*?)"$/) do |arg1|
-	page.should have_content(arg1)
+Then(/^I should see "(.*?)"$/) do |arg1| 
+	page.should have_content(arg1) 
 end
 
 Then(/^I should have ([0-9]) Survey$/) do |count| 
