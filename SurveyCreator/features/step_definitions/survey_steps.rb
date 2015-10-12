@@ -18,11 +18,6 @@ When(/^I press "Create Survey"$/) do
 	click_button('Create Survey')
 end
 
-Then(/^I should be redirected to Survey$/) do
-  request.headers['HTTP_REFERER'].should_not be_nil
-  request.headers['HTTP_REFERER'].should_not == request.request_uri
-end 
-
 Then(/^I should see "(.*?)"$/) do |arg1| 
 	page.should have_content(arg1) 
 end
