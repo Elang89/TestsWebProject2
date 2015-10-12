@@ -18,7 +18,7 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
 				<li class="col-md"><%= link_to "Home", root_path%></li>
-				<li class="col-md"><%= link_to "Surveys", "#"%></li> 
+				<li class="col-md"><%= link_to "Answer Surveys", published_surveys_path %></li> 
 			<% if user_signed_in? %>
 				<li class="col-md"><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
 				<li class="col-md"><%= link_to "Create Survey", surveys_new_path%></li>

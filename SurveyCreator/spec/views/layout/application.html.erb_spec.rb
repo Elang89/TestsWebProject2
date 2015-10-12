@@ -25,7 +25,7 @@ describe "layouts/application", type: :view do
 		expect(rendered).not_to have_link('Log out', href: destroy_user_session_path)
 		expect(rendered).not_to have_link("Create Survey", href: new_survey_path)
 		expect(rendered).to have_link("Create Account", href: new_user_registration_path)
-		expect(rendered).to have_link("Surveys", href: surveys_path)
+		expect(rendered).to have_link("Surveys", href: published_surveys_path)
 		expect(rendered).to have_link("Log in", href: new_user_session_path)
 	end
 end

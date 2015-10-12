@@ -1,7 +1,13 @@
 class SurveysController < ApplicationController
+	before_action :authenticate_user!, only: [:published_surveys]
+
 	def index
 		@surveys = Survey.all
 	end
+
+	def published 
+		@surveys = Survey.where(:status => true).order("name DESC")
+	end 
 
 	def new
 		@survey = Survey.new

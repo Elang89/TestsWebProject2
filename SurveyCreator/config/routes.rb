@@ -1,12 +1,19 @@
 Rails.application.routes.draw do
 
+  resources :results
   get 'surveys/index'
 
   get 'surveys/new'
 
   devise_for :users
 
-  resources :surveys
+
+  resources :surveys do 
+    collection do
+        get 'published'
+    end
+    resources :results, only: [:new, :create, :show]
+  end 
 
   get 'pages/home'
 
