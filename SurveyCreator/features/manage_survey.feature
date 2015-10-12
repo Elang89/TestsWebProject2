@@ -9,5 +9,5 @@ Feature: Manage survey
   	When I press "New Survey" 
   	And I fill in "Name" with "Animals" 
   	And I press "Create Survey" 
-  	Then I should be redirected to Survey
+  	Then I should see "Survey was successfully created."
   	Then I should have 1 Survey
