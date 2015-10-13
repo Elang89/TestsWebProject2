@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :results
+  resources :responses
   get 'surveys/index'
 
   get 'surveys/new'
@@ -12,7 +12,7 @@ Rails.application.routes.draw do
     collection do
         get 'published'
     end
-    resources :results, only: [:new, :create, :show]
+    resources :responses, only: [:new, :create, :show]
   end 
 
   get 'pages/home'

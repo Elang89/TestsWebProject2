@@ -1,5 +1,4 @@
 class Answer < ActiveRecord::Base
   belongs_to :question
-
-  validates_presence_of :answer_content
+  belongs_to :response
 end
