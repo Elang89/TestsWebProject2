@@ -24,12 +24,13 @@ class ResponsesController < ApplicationController
   def create
     @survey = Survey.find(params[:survey_id])
     @response = @survey.responses.new(response_params)
+    Rails.logger.debug(@response.survey_id)
 
     respond_to do |format|
       if @response.save
-        format.html { redirect_to @response, notice: 'Response was successfully created.' }
+        format.html { redirect_to survey_result_path(@response), notice: 'Response was successfully created.' }
       else
-        render :new
+        format.html {render :new}
       end
     end
   end
@@ -43,6 +44,6 @@ class ResponsesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def response_params
       params.require(:response).permit(:survey_id, 
-        answers_attributes: [:id,:response_id, :answer_content])
+        answers_attributes: [:id,:response_id, :question_id, :answer_content])
     end
 end

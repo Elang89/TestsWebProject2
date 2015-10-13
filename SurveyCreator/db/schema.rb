@@ -16,10 +16,12 @@ ActiveRecord::Schema.define(version: 20151013050141) do
   create_table "answers", force: :cascade do |t|
     t.string   "answer_content", limit: 255
     t.integer  "response_id",    limit: 4
+    t.integer  "question_id",    limit: 4
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
   end
 
+  add_index "answers", ["question_id"], name: "index_answers_on_question_id", using: :btree
   add_index "answers", ["response_id"], name: "index_answers_on_response_id", using: :btree
 
   create_table "questions", force: :cascade do |t|
@@ -67,6 +69,7 @@ ActiveRecord::Schema.define(version: 20151013050141) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "answers", "questions"
   add_foreign_key "answers", "responses"
   add_foreign_key "questions", "surveys"
   add_foreign_key "responses", "surveys"
