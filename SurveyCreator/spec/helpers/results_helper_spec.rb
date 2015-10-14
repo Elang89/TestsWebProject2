@@ -11,5 +11,10 @@ require 'rails_helper'
 #   end
 # end
 RSpec.describe ResultsHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+    describe "string concat" do
+     it "concats two strings with spaces" do
+       expect(helper.pageName).to eq("SurveyCreator")
+     end
+   end
+ 
 end

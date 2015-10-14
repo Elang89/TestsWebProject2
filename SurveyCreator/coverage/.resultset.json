@@ -619,6 +619,11 @@
         null,
         2,
         null,
+        1,
+        1,
+        0,
+        null,
+        null,
         null
       ],
       "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/devise_test_helper.rb": [
@@ -655,6 +660,9 @@
       ],
       "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/results_helper.rb": [
         1,
+        1,
+        1,
+        null,
         null
       ],
       "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/surveys_helper.rb": [
@@ -991,6 +999,11 @@
         null,
         1,
         1,
+        1,
+        1,
+        null,
+        null,
+        null,
         null
       ],
       "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/models/answer_spec.rb": [
@@ -998,6 +1011,22 @@
         null,
         1,
         1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/models/answer.rb": [
@@ -1043,6 +1072,22 @@
         null,
         1,
         1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/models/result.rb": [
@@ -1297,6 +1342,6 @@
         null
       ]
     },
-    "timestamp": 1444833322
+    "timestamp": 1444835950
   }
 }

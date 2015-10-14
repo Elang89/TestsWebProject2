@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'spec_helper'
 
-describe "layouts/application", type: :view do
+RSpec.describe "layouts/application", type: :view do
 	it "should display a navbar with a list of links" do 
 		render 
 		expect(rendered).to have_selector('div')

@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'spec_helper'
 
-describe Question, type: :model do
+RSpec.describe Question, type: :model do
 	before(:each) do 
 		@user = User.create!(email: "email@gmail.com", password: "password")
 		@survey = Survey.create!(name: "Survey", user_id: @user.id)

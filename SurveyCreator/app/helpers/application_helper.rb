@@ -9,4 +9,9 @@ module ApplicationHelper
     end
     link_to_function(name, "add_fields(this, \"#{association}\", \"#{escape_javascript(fields)}\")")
   end
+  module ApplicationHelper
+  def page_title
+    "Survey Creator"
+  end
+end
 end
