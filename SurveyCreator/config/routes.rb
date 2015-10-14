@@ -1,10 +1,5 @@
 Rails.application.routes.draw do
 
-  resources :responses
-  get 'surveys/index'
-
-  get 'surveys/new'
-
   devise_for :users
 
 
@@ -12,7 +7,7 @@ Rails.application.routes.draw do
     collection do
         get 'published'
     end
-    resources :responses, only: [:new, :create, :show]
+    resources :results, only: [:index, :new, :create, :show]
   end 
 
   get 'pages/home'

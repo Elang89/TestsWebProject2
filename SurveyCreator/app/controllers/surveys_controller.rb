@@ -1,5 +1,4 @@
 class SurveysController < ApplicationController
-	before_action :authenticate_user!, only: [:published_surveys]
 
 	def index
 		@surveys = Survey.all

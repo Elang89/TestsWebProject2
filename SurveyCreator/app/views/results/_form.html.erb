@@ -1,16 +1,16 @@
-<%= form_for([@response.survey, @response]) do |f| %>
-  <% if @response.errors.any? %>
+<%= form_for [@survey,@result] do |f| %>
+  <%=f.hidden_field :survey_id, value: @result.survey.id %>
+  <% if @result.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@response.errors.count, "error") %> prohibited this response from being saved:</h2>
+      <h2><%= pluralize(@result.errors.count, "error") %> prohibited this result from being saved:</h2>
 
       <ul>
-      <% @response.errors.full_messages.each do |message| %>
+      <% @result.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
     </div>
   <% end %>
-
     <% for question in @survey.questions %>
       <label><%= question.question_content %></label>
       <%= select_tag :answer_content, options_for_select(["Very Good", "Good", "Average", "Bad", "Very Bad"]) %>

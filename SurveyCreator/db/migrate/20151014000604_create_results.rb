@@ -1,6 +1,6 @@
-class CreateResponses < ActiveRecord::Migration
+class CreateResults < ActiveRecord::Migration
   def change
-    create_table :responses do |t|
+    create_table :results do |t|
       t.references :survey, index: true, foreign_key: true
 
       t.timestamps null: false

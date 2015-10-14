@@ -2,10 +2,11 @@ class CreateAnswers < ActiveRecord::Migration
   def change
     create_table :answers do |t|
       t.string :answer_content
-      t.references :response, index: true, foreign_key: true
+      t.references :result, index: true, foreign_key: true
       t.references :question, index: true, foreign_key: true
 
       t.timestamps null: false
     end
   end
 end
+
