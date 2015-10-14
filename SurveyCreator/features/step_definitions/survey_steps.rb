@@ -25,7 +25,6 @@ Given(/^I am on the Published page$/) do
 	visit "/surveys/published"
 end
 
-
 Given (/^I am a new, authenticated user$/) do
   email = 'testing@man.net'
   password = '@L3jaNdR01'
@@ -39,3 +38,12 @@ end
 When (/^(?:|I )check "([^"]*)"$/) do |field|
   check(field)
 end
+When(/^I press "Answer Survey"$/) do 
+	click_link('Answer Survey')
+end
+
+When(/^a answer_content is selected$/) do
+  find("option[value='Very Good']").click 
+end
+
+

@@ -14,4 +14,8 @@ Feature: Manage survey
     And I am on the Published page 
     Then I should see "Survey was successfully created."
     Then I should see "Animals"
+  Scenario: Check Answers
+    Given I am a new, authenticated user
+    And I am on the Published page
+    When I press "Answer Survey"
 
