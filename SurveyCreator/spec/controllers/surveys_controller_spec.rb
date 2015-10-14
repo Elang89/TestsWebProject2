@@ -31,7 +31,7 @@ describe SurveysController, type: :controller do
 			survey = Survey.create! valid_attributes
 			get :new 
 			expect(assigns(:survey)).to be_a_new(Survey)
-			expect(assigns(:survey).questions.size).to eq(5)
+			expect(assigns(:survey).questions.size).to eq(1)
 		end
 
 		it "renders the template for a new survey" do 

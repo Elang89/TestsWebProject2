@@ -4,7 +4,7 @@ require 'spec_helper'
 describe "layouts/application", type: :view do
 	it "should display a navbar with a list of links" do 
 		render 
-		expect(rendered).to have_selector('nav')
+		expect(rendered).to have_selector('div')
 		expect(rendered).to have_link("Create Account", href: new_user_registration_path)
 		expect(rendered).to have_link("Log in", href: new_user_session_path)
 	end

@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/environment.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/application.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/application.rb": [
         1,
         null,
         1,
@@ -36,12 +36,12 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/boot.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/environments/test.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/environments/test.rb": [
         1,
         null,
         null,
@@ -85,7 +85,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/assets.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -98,7 +98,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/backtrace_silencers.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -107,12 +107,12 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/cookies_serializer.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/devise.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -376,13 +376,13 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/filter_parameter_logging.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/inflections.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -400,18 +400,18 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/mime_types.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/session_store.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/initializers/wrap_parameters.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -427,12 +427,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/config/routes.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/config/routes.rb": [
         1,
         null,
         1,
@@ -441,8 +436,9 @@
         1,
         1,
         1,
-        null,
         1,
+        null,
+        null,
         null,
         null,
         1,
@@ -507,7 +503,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/models/user.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/models/user.rb": [
         1,
         null,
         null,
@@ -516,7 +512,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/spec_helper.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/spec_helper.rb": [
         null,
         null,
         null,
@@ -611,11 +607,21 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/helpers/application_helper.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/application_helper.rb": [
         1,
+        1,
+        0,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        2,
+        null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/helpers/devise_test_helper.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/devise_test_helper.rb": [
         1,
         1,
         10,
@@ -630,134 +636,63 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/helpers/pages_helper.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/link_to_function_helper.rb": [
         1,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/helpers/results_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/helpers/surveys_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/controllers/pages_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null,
-        1,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/controllers/results_controller_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        13,
-        null,
-        null,
         1,
         2,
         null,
-        null,
-        null,
-        null,
+        2,
+        2,
+        2,
         null,
         2,
         null,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/pages_helper.rb": [
         1,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/results_helper.rb": [
         1,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/helpers/surveys_helper.rb": [
         1,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/controllers/pages_controller.rb": [
         1,
         1,
         null,
         null,
-        null,
-        1,
-        1,
-        1,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
         1,
         null,
         null,
-        null,
         1,
-        1,
-        0,
-        0,
         null,
-        null,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/controllers/application_controller.rb": [
         1,
-        1,
-        0,
-        null,
         null,
         null,
         1,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/controllers/results_controller_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/controllers/results_controller.rb": [
         1,
         1,
-        0,
         null,
         null,
-        1,
+        null,
         1,
         0,
         null,
@@ -765,99 +700,51 @@
         null,
         null,
         1,
-        1,
-        1,
-        0,
-        null,
-        null,
-        1,
-        1,
-        0,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
         0,
         0,
         null,
         null,
         null,
         1,
-        1,
-        1,
         0,
-        0,
-        null,
-        null,
-        1,
-        1,
         0,
         0,
         null,
         null,
         null,
         null,
+        null,
         1,
-        1,
-        1,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
         0,
         0,
         null,
         null,
         null,
+        null,
+        null,
+        null,
         1,
+        null,
         1,
-        0,
         0,
         null,
+        null,
+        null,
+        1,
+        0,
         null,
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/controllers/results_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/controllers/surveys_controller_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/controllers/surveys_controller_spec.rb": [
         1,
         1,
         null,
@@ -1021,8 +908,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/controllers/surveys_controller.rb": [
-        1,
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/controllers/surveys_controller.rb": [
         1,
         null,
         1,
@@ -1035,7 +921,7 @@
         null,
         1,
         2,
-        12,
+        4,
         null,
         null,
         1,
@@ -1090,21 +976,37 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/models/answer_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/helpers/results_helper_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/models/answer_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/models/answer.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/models/answer.rb": [
         1,
         1,
-        null,
         1,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/models/question_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/models/question_spec.rb": [
         1,
         1,
         null,
@@ -1127,7 +1029,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/models/question.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/models/question.rb": [
         1,
         1,
         1,
@@ -1136,43 +1038,47 @@
         1,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/models/result_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/models/result_spec.rb": [
         1,
         null,
         1,
         1,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/models/result.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/models/result.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/models/survey_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/app/models/survey.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
         1,
         1,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/models/survey_spec.rb": [
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/app/models/survey.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        1,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/models/user_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/models/user_spec.rb": [
         1,
         1,
         null,
@@ -1184,28 +1090,6 @@
         1,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/devise/registrations/edit.html.erb_spec.rb": [
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/devise/registrations/new.html.erb_spec.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -1214,8 +1098,13 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/devise/sessions/new.html.erb_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/devise/registrations/edit.html.erb_spec.rb": [
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/devise/registrations/new.html.erb_spec.rb": [
         1,
+        1,
+        null,
         1,
         null,
         1,
@@ -1227,32 +1116,16 @@
         1,
         1,
         1,
+        null,
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/layout/application.html.erb_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/devise/sessions/new.html.erb_spec.rb": [
         1,
         1,
         null,
         1,
         1,
-        1,
-        1,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
         1,
         1,
         1,
@@ -1263,128 +1136,30 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/pages/about.html.erb_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/layout/application.html.erb_spec.rb": [
         1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/pages/contact.html.erb_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/pages/home.html.erb_spec.rb": [
-        1,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/results/edit.html.erb_spec.rb": [
         1,
         null,
         1,
         1,
         1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        0,
-        null,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/results/index.html.erb_spec.rb": [
-        1,
-        null,
         1,
         1,
         1,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/results/new.html.erb_spec.rb": [
         1,
-        null,
+        1,
+        1,
+        1,
         1,
         1,
         1,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/results/show.html.erb_spec.rb": [
-        1,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
         1,
         1,
@@ -1394,7 +1169,28 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/surveys/edit.html.erb_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/pages/about.html.erb_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/pages/contact.html.erb_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/pages/home.html.erb_spec.rb": [
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/surveys/edit.html.erb_spec.rb": [
         1,
         null,
         1,
@@ -1412,7 +1208,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/surveys/index.html.erb_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/surveys/index.html.erb_spec.rb": [
         1,
         1,
         null,
@@ -1451,7 +1247,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/surveys/new.html.erb_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/surveys/new.html.erb_spec.rb": [
         1,
         1,
         null,
@@ -1469,7 +1265,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/surveys/published.html.erb_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/surveys/published.html.erb_spec.rb": [
         1,
         1,
         null,
@@ -1485,7 +1281,7 @@
         null,
         null
       ],
-      "/home/ernesto/Documents/ruby_project/TestsWebProject2/SurveyCreator/spec/views/surveys/show.html.erb_spec.rb": [
+      "/home/emmanuel/Documents/Web/Projects/TestsWebProject2/SurveyCreator/spec/views/surveys/show.html.erb_spec.rb": [
         1,
         1,
         null,
@@ -1501,6 +1297,6 @@
         null
       ]
     },
-    "timestamp": 1444692932
+    "timestamp": 1444833322
   }
 }
