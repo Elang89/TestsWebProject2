@@ -23,23 +23,28 @@ class ResultsController < ApplicationController
 
   # POST /results
   # POST /results.json
+
   def create
     @survey = Survey.find(params[:survey_id])
-    @result = @survey.results.new(result_params)
+    @result = @survey.results.build(result_params)
 
     respond_to do |format|
       if @result.save
-        format.html { redirect_to survey_result_path(@survey, @result), notice: 'result was successfully created.' }
+        format.html { redirect_to [@result.survey,@result], notice: 'Question was successfully created.' }
+        format.json { render :index, status: :created, location: [@result.survey,@result] }
       else
-        format.html {render :new}
+        format.html { render :new }
+        format.json { render json: @result.errors, status: :unprocessable_entity }
       end
     end
   end
 
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_result
-      @result = result.find(params[:id])
+      @result = Result.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

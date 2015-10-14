@@ -23,6 +23,11 @@
     <%= f.label :status, "Publish(only check this if you are sure 
     this is your final version of the survey)"%>
   </div>
+
+
+  <p><%= link_to_add_fields "Add Question", f, :questions %></p>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
