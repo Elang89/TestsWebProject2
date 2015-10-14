@@ -13,3 +13,14 @@
  *= require_tree .
  *= require_self
  */
+
+body#background{  
+	background-size: cover;
+	background-image: url('http://eskipaper.com/images/free-pretty-backgrounds-1.jpg'); 
+} 
+
+h1{ 
+	font-size: 36px; 
+	color: #633E19; 
+	font-family: 'Roboto Slab', serif;
+}
