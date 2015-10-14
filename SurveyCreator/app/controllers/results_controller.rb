@@ -25,6 +25,10 @@ class ResultsController < ApplicationController
   # POST /results
   # POST /results.json
 
+  def statistics
+    @survey = Survey.find(params[:survey_id])
+    @result = @survey.results.find(params[:id])
+  end
   def create
     @survey = Survey.find(params[:survey_id])
     @result = @survey.results.build(result_params)
