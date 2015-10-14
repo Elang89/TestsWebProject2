@@ -21,7 +21,21 @@ end
 Then(/^I should see "(.*?)"$/) do |arg1| 
 	expect(have_content(arg1)) 
 end
+Given(/^I am on the Published page$/) do
+	visit "/surveys/published"
+end
 
-Then(/^I should have ([0-9]) Survey$/) do |count| 
-	expect(Survey.count).to eq(count.to_i) 
-end 
+
+Given (/^I am a new, authenticated user$/) do
+  email = 'testing@man.net'
+  password = '@L3jaNdR01'
+  User.new(:email => email, :password => password, :password_confirmation => password).save!
+
+  visit '/users/sign_in'
+  fill_in "user_email", :with => email
+  fill_in "user_password", :with => password
+  click_button "Log in"
+end
+When (/^(?:|I )check "([^"]*)"$/) do |field|
+  check(field)
+end

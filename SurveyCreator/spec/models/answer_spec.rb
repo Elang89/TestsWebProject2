@@ -8,6 +8,8 @@ RSpec.describe Answer, type: :model do
 	end 
 
 	it "creates a valid answer to a survey" do
+    	@result = @survey.results.build
+    	@survey.questions.size.times{@result.answers.build}
 		#question = Question.new(question_content: "What is your answer to that?", survey_id: @survey.id)
 		#expect(question).not_to be_nil
 		#expect(question).to be_valid
