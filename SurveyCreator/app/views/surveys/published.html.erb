@@ -17,7 +17,8 @@
         <td><%= survey.name %></td>
         <td><%= User.find_by_id(survey.user_id).email %>
         <td><%= link_to "Answer Survey", new_survey_result_path(survey) %></td>
-      </tr>
+        <td><%= link_to 'Look the Answers', survey_results_path(survey) %></td>
+        </tr>
     <% end %>
   </tbody>
 </table>
