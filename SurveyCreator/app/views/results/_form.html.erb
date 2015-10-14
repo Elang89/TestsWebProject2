@@ -1,3 +1,4 @@
+<% @counter = 0 %>
 <%= form_for [@result.survey,@result] do |f| %>
   <%=f.hidden_field :survey_id, value: @result.survey.id %>
   <% if @result.errors.any? %>
@@ -11,12 +12,12 @@
       </ul>
     </div>
   <% end %>
-    <% for question in @survey.questions %>
-      <label><%= question.question_content %></label>
-      <%= select_tag :answer_content, options_for_select(["Very Good", "Good", "Average", "Bad", "Very Bad"]) %>
-      <%= hidden_field_tag :question_id, question.id %>
+    <%= f.fields_for :answers do |answer| %>
+      <label><%= @survey.questions[@counter].question_content %></label>
+      <%= answer.hidden_field :question_id, value: @survey.questions[@counter].id %>
+      <%= answer.select :answer_content, options_for_select(["Very Good", "Good", "Average", "Bad", "Very Bad"]) %>
+      <% @counter = @counter + 1 %>
     <% end %>
-
   <div class="actions">
     <%= f.submit %>
   </div>

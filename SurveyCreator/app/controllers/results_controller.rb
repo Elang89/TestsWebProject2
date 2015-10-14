@@ -4,7 +4,8 @@ class ResultsController < ApplicationController
   # GET /results
   # GET /results.json
   def index
-    @results = Result.all
+    @survey = Survey.find(params[:survey_id])
+    @results = @survey.results.all
   end
 
   # GET /results/1
