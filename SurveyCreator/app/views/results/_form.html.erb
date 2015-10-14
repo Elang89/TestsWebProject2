@@ -1,4 +1,4 @@
-<%= form_for [@survey,@result] do |f| %>
+<%= form_for [@result.survey,@result] do |f| %>
   <%=f.hidden_field :survey_id, value: @result.survey.id %>
   <% if @result.errors.any? %>
     <div id="error_explanation">
