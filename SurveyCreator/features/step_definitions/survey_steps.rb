@@ -46,4 +46,11 @@ When(/^a answer_content is selected$/) do
   find("option[value='Very Good']").click 
 end
 
+Given(/^I am on the Home page$/) do
+  visit "/"
+end
+
+Then(/^I should see Welcome to the Survey Creator$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
