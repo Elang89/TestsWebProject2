@@ -8,17 +8,16 @@
       <td>Answer</td>
       <td></td>
       <td></td>
-    </tr>
-    <% @survey.questions.each do |ans| %>
+    </tr> 
+
+    <% @survey.questions.zip(@result.answers) do |ans, ans1| %>
     	<tr>
-          	<td><%= ans.question_content %></td>
-        </tr>
+          <td><%= ans.question_content %></td> 
+          <td></td>  
+          <td><%= ans1.answer_content %></td>
+      </tr>
     <% end %>
-    <% @result.answers.each do |ans1| %>
-    	<tr>
-          	<td><%= ans1.answer_content %></td>
-        </tr>
-    <% end %>
+
   </tbody>
 </table>
 
