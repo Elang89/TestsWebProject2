@@ -49,8 +49,8 @@ When(/^I press link "(.*?)"$/) do |arg1|
   click_link(arg1)
 end
 
-When(/^I press Create Result$/) do 
-  click_button "Create Result"
+When(/^I press "Create Result"$/) do 
+  click_button('Create Result')
 end
 
 Given(/^I am on the sign up page$/) do

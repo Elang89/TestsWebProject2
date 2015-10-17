@@ -11,7 +11,7 @@ Scenario: Check public surveys
 	Given I am on the Home page 
 	When I press link "Answer Surveys"
 	Then I should see "Listing Public Surveys" 
-	Then I should see a table 
+	Then I should see "Survey Name" 
 
 Scenario: Answer question 
     Given I have no Surveys
@@ -25,7 +25,6 @@ Scenario: Answer question
     And I am on the Published page  
     And I press link "Answer Surveys" 
     And I press link "Answer Survey"  
-    Then I should see "New Result"  
-    And I press Create Result
-	Then I should see "You done! The New Survey Survey" 
+    Then I should see "New Result" 
+    Then I should see "Is it good?" 
  
