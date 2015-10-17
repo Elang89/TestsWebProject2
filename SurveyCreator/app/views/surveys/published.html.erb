@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Results</h1>
+<h1>Listing Public Surveys</h1>
 
 <table>
   <thead>
@@ -16,8 +16,8 @@
       <tr>
         <td><%= survey.name %></td>
         <td><%= User.find_by_id(survey.user_id).email %>
+        <td><%= link_to "Look the Answers", survey_results_path(survey) %></td>
         <td><%= link_to "Answer Survey", new_survey_result_path(survey) %></td>
-        <td><%= link_to 'Look the Answers', survey_results_path(survey) %></td>
         </tr>
     <% end %>
   </tbody>
